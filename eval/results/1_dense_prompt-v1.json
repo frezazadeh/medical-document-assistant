@@ -1,0 +1,297 @@
+{
+  "provider": "ollama",
+  "model": "qwen2.5:3b",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "retrieval_mode": "dense",
+  "summary": {
+    "retrieval_hit": "11/12",
+    "answer_correct": "10/12",
+    "cites_gold_page": "5/12",
+    "grounded": "5/12",
+    "refusal_correct": "4/4",
+    "passed": "8/16",
+    "median_latency_ms": 3411
+  },
+  "results": [
+    {
+      "id": "randomized",
+      "answerable": true,
+      "answer": "412 participants were randomized in the study. [3]",
+      "grounded": true,
+      "latency_ms": 3581,
+      "trace_id": "2964db9ef90d447f",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "primary_endpoint",
+      "answerable": true,
+      "answer": "The primary endpoint was met [2].",
+      "grounded": true,
+      "latency_ms": 481,
+      "trace_id": "d3d5c93ac7ca414f",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": false,
+      "cited_gold": true,
+      "passed": false
+    },
+    {
+      "id": "mechanism",
+      "answerable": true,
+      "answer": "Veltaprin, a selective aldosterone synthase inhibitor, works by lowering aldosterone production. It inhibits the CYP11B2 enzyme, which is responsible for the production of aldosterone, with low affinity for CYP11B1, the enzyme responsible for cortisol synthesis.",
+      "grounded": false,
+      "latency_ms": 7017,
+      "trace_id": "5bb36e052c884f7b",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "sites",
+      "answerable": true,
+      "answer": "The study was conducted at 42 sites in 6 countries [1].",
+      "grounded": true,
+      "latency_ms": 3967,
+      "trace_id": "eb365a25ee7a4c78",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "sbp_10mg",
+      "answerable": true,
+      "answer": "The placebo-adjusted reduction in systolic blood pressure with the 10 mg dose was -11.2 mmHg.",
+      "grounded": false,
+      "latency_ms": 1372,
+      "trace_id": "07649ae093de468c",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": false,
+      "answer_ok": false,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "completers",
+      "answerable": true,
+      "answer": "381 participants completed the 12-week treatment period. [2]",
+      "grounded": true,
+      "latency_ms": 4113,
+      "trace_id": "b442bf12721544b3",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "hyperkalemia_10mg",
+      "answerable": true,
+      "answer": "Hyperkalemia occurred in 9.7% of participants on veltaprin 10 mg.",
+      "grounded": false,
+      "latency_ms": 1278,
+      "trace_id": "db21f00d93dc4d16",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "deaths",
+      "answerable": true,
+      "answer": "No deaths occurred during the study [4].",
+      "grounded": true,
+      "latency_ms": 2299,
+      "trace_id": "480b5c4a3c8f4358",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "exclusion",
+      "answerable": true,
+      "answer": "Serum potassium above 5.0 mmol/L at screening excluded people from taking part.",
+      "grounded": false,
+      "latency_ms": 900,
+      "trace_id": "2c3bc8a3813b4df1",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "phase3_dose",
+      "answerable": true,
+      "answer": "The 5 mg once-daily dose was selected for Phase 3 because it delivered most of the blood pressure reduction seen with 10 mg while the rate of hyperkalemia was lower (5.8% versus 9.7%).",
+      "grounded": false,
+      "latency_ms": 2172,
+      "trace_id": "33715151fbdf4092",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "interrupt",
+      "answerable": true,
+      "answer": "Study treatment has to be interrupted if serum potassium is 5.6 mmol/L or higher.",
+      "grounded": false,
+      "latency_ms": 3787,
+      "trace_id": "5ab8e02ff93c4692",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "week1",
+      "answerable": true,
+      "answer": "Protocol amendment 2 added an additional serum potassium measurement at week 1 (day 7, with a window of plus or minus 2 days).",
+      "grounded": false,
+      "latency_ms": 3618,
+      "trace_id": "df72522f7c774e5d",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "ldl",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 3411,
+      "trace_id": "87499689094246ad",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "metformin",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 3560,
+      "trace_id": "58073f5b28f94103",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "pediatric",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 2356,
+      "trace_id": "c35083e0e80f4aa6",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "offtopic",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 3094,
+      "trace_id": "b0f37e5d2ac6477d",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    }
+  ]
+}

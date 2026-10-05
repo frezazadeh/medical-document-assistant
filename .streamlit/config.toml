@@ -1,0 +1,8 @@
+[server]
+# no first-run email prompt and no browser pop-up; open http://localhost:8501 yourself
+headless = true
+# keep in line with MDA_MAX_UPLOAD_MB on the API side
+maxUploadSize = 20
+
+[browser]
+gatherUsageStats = false

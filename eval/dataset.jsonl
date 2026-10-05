@@ -1,0 +1,16 @@
+{"id": "randomized", "question": "How many participants were randomized in the study?", "file": "vlt201_csr_synopsis.pdf", "page": 3, "must_contain": ["412"]}
+{"id": "primary_endpoint", "question": "What was the primary endpoint?", "file": "vlt201_csr_synopsis.pdf", "page": 2, "must_contain": ["systolic", "week 12"]}
+{"id": "mechanism", "question": "What is the mechanism of action of veltaprin?", "file": "vlt201_csr_synopsis.pdf", "page": 1, "must_contain": ["aldosterone synthase"]}
+{"id": "sites", "question": "At how many sites and in how many countries was the study run?", "file": "vlt201_csr_synopsis.pdf", "page": 1, "must_contain": ["42", "6"]}
+{"id": "sbp_10mg", "question": "What was the placebo-adjusted reduction in systolic blood pressure with the 10 mg dose?", "file": "vlt201_csr_synopsis.pdf", "page": 4, "must_contain": ["13.8"]}
+{"id": "completers", "question": "How many participants completed the 12-week treatment period?", "file": "vlt201_csr_synopsis.pdf", "page": 3, "must_contain": ["381"]}
+{"id": "hyperkalemia_10mg", "question": "How common was hyperkalemia in the 10 mg group?", "file": "vlt201_csr_synopsis.pdf", "page": 5, "must_contain": ["9.7"]}
+{"id": "deaths", "question": "Were there any deaths during the study?", "file": "vlt201_csr_synopsis.pdf", "page": 5, "must_contain": ["no deaths"]}
+{"id": "exclusion", "question": "Which potassium level excluded people from taking part?", "file": "vlt201_csr_synopsis.pdf", "page": 2, "must_contain": ["5.0"]}
+{"id": "phase3_dose", "question": "Which dose was chosen for Phase 3 and why?", "file": "vlt201_csr_synopsis.pdf", "page": 6, "must_contain": ["5 mg", "hyperkalemia"]}
+{"id": "interrupt", "question": "At what potassium value does study treatment have to be interrupted?", "file": "vlt201_site_memo_potassium.txt", "page": 1, "must_contain": ["5.6"]}
+{"id": "week1", "question": "What did protocol amendment 2 add to the visit schedule?", "file": "vlt201_site_memo_potassium.txt", "page": 1, "must_contain": ["week 1"]}
+{"id": "ldl", "question": "What effect did veltaprin have on LDL cholesterol?", "answerable": false}
+{"id": "metformin", "question": "What is the recommended starting dose of metformin for type 2 diabetes?", "answerable": false}
+{"id": "pediatric", "question": "What were the results in children under 12?", "answerable": false}
+{"id": "offtopic", "question": "Who won the football world cup in 2018?", "answerable": false}

@@ -1,0 +1,20 @@
+name: condense_question
+version: "1"
+description: >
+  Rewrites a follow-up question so it can be used as a search query on its own.
+  Only used when there is conversation history.
+template: |
+  Rewrite the last question so that it can be understood without the
+  conversation: replace pronouns and references such as "it", "that group" or
+  "the second one" with what they refer to. Keep drug names, endpoints and
+  numbers unchanged. If the question already stands on its own, return it as is.
+
+  Return only the rewritten question, with no explanation and no quotes.
+
+  <conversation>
+  {% for turn in history %}
+  {{ turn.role }}: {{ turn.content }}
+  {% endfor %}
+  </conversation>
+
+  Last question: {{ question }}

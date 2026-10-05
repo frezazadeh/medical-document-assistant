@@ -1,0 +1,38 @@
+name: qa_user
+version: "4"
+description: >
+  Per-request turn. Document inventory and retrieved excerpts come first and the
+  question last, which is where models pay most attention on long inputs.
+
+  v2: repeats the citation rule after the question. With v1 the 3B local model
+  answered correctly but left out the [id] markers in 7 of 12 eval questions;
+  the rule in the system prompt was too far away from where it writes.
+
+  v3: each source starts with the literal marker the model should copy, "[2]",
+  instead of an XML attribute id="2". The small model kept citing a neighbouring
+  id with the XML form (right page cited in 8/12, now 10/12).
+
+  v4: the source header no longer shows file name and page, only the id. With
+  "[4] report.pdf, page 3" the model answered "... [3]", probably copying the page
+  number. The model only needs the id; the code maps the id back to file and
+  page for the reader.
+template: |
+  <documents>
+  {% for doc in documents %}
+  - {{ doc.filename }} ({{ doc.pages }} pages)
+  {% endfor %}
+  </documents>
+
+  <sources>
+  {% for source in sources %}
+  [{{ source.ref }}]
+  {{ source.text }}
+
+  {% endfor %}
+  </sources>
+
+  Question: {{ question }}
+
+  Answer the question that was asked, using only the sources above. End every
+  sentence that states a fact with the id of its source in square brackets,
+  for example [1].

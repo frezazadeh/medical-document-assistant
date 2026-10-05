@@ -1,0 +1,22 @@
+SYNTHETIC DOCUMENT - written for software testing. Not real clinical data.
+
+Study VLT-201 (ASCENT-HTN) - Memo to investigational sites
+Subject: Protocol amendment 2, potassium monitoring
+Date: 6 June 2022
+
+Background
+The independent data monitoring committee reviewed unblinded safety data after the first 120 participants had completed 4 weeks of treatment. The committee recommended that the study continue and asked for closer monitoring of serum potassium.
+
+What changes
+An additional serum potassium measurement is required at week 1 (day 7, with a window of plus or minus 2 days). Until now the first post-baseline measurement was at week 2.
+
+Study treatment must be interrupted if serum potassium is 5.6 mmol/L or higher. The measurement must be repeated within 72 hours. Treatment may be restarted only if the repeat value is below 5.0 mmol/L.
+
+Study treatment must be stopped permanently if serum potassium is 6.0 mmol/L or higher at any time, or if treatment has been interrupted twice for hyperkalemia.
+
+Participants should be advised not to start potassium supplements or potassium-containing salt substitutes during the study.
+
+What does not change
+Dosing, visit schedule after week 2 and all efficacy assessments remain as described in protocol version 2.0.
+
+Questions about this memo go to the study medical monitor through the usual site contact.

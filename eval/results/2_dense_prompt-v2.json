@@ -1,0 +1,297 @@
+{
+  "provider": "ollama",
+  "model": "qwen2.5:3b",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "retrieval_mode": "dense",
+  "summary": {
+    "retrieval_hit": "11/12",
+    "answer_correct": "10/12",
+    "cites_gold_page": "8/12",
+    "grounded": "12/12",
+    "refusal_correct": "4/4",
+    "passed": "11/16",
+    "median_latency_ms": 3861
+  },
+  "results": [
+    {
+      "id": "randomized",
+      "answerable": true,
+      "answer": "412 participants were randomized [3].",
+      "grounded": true,
+      "latency_ms": 3438,
+      "trace_id": "01762e6b48e34367",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "primary_endpoint",
+      "answerable": true,
+      "answer": "The primary endpoint was met [3].",
+      "grounded": true,
+      "latency_ms": 3340,
+      "trace_id": "203869fb42cf4b80",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": false,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "mechanism",
+      "answerable": true,
+      "answer": "Veltaprin is a selective aldosterone synthase inhibitor [1]. It lowers aldosterone production by inhibiting the CYP11B2 enzyme, with low affinity for CYP11B1, the enzyme responsible for cortisol synthesis.",
+      "grounded": true,
+      "latency_ms": 5411,
+      "trace_id": "5fff56880d3d49a4",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "sites",
+      "answerable": true,
+      "answer": "The study was conducted at 42 sites in 6 countries [1].",
+      "grounded": true,
+      "latency_ms": 4422,
+      "trace_id": "633c2b4f975e4fe5",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "sbp_10mg",
+      "answerable": true,
+      "answer": "The placebo-adjusted reduction in systolic blood pressure with the 10 mg dose was -11.2 mmHg [3].",
+      "grounded": true,
+      "latency_ms": 1495,
+      "trace_id": "28d7a39e3a2047cb",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": false,
+      "answer_ok": false,
+      "cited_gold": true,
+      "passed": false
+    },
+    {
+      "id": "completers",
+      "answerable": true,
+      "answer": "381 participants [2] completed the 12-week treatment period.",
+      "grounded": true,
+      "latency_ms": 3489,
+      "trace_id": "078833abad1142e3",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "hyperkalemia_10mg",
+      "answerable": true,
+      "answer": "Hyperkalemia occurred in 9.7% of participants on veltaprin 10 mg [2].",
+      "grounded": true,
+      "latency_ms": 5517,
+      "trace_id": "52f303106ca84f8c",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "deaths",
+      "answerable": true,
+      "answer": "There were no deaths during the study [1].",
+      "grounded": true,
+      "latency_ms": 2945,
+      "trace_id": "ed53dc8826bd447e",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "exclusion",
+      "answerable": true,
+      "answer": "The measurement must be repeated within 72 hours. Treatment may be restarted only if the repeat value is below 5.0 mmol/L. [4][5]",
+      "grounded": true,
+      "latency_ms": 1947,
+      "trace_id": "de84820aad934abc",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "phase3_dose",
+      "answerable": true,
+      "answer": "Veltaprin given once daily for 12 weeks produced dose-dependent, clinically relevant reductions in systolic blood pressure in adults with uncontrolled hypertension on three or more medicines [5]. The 5 mg once-daily dose was selected for Phase 3. It delivered most of the blood pressure reduction seen with 10 mg while the rate of hyperkalemia was lower (5.8% versus 9.7%) [5].",
+      "grounded": true,
+      "latency_ms": 6822,
+      "trace_id": "9158b1e8b64145ae",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": false,
+      "passed": false
+    },
+    {
+      "id": "interrupt",
+      "answerable": true,
+      "answer": "Study treatment has to be interrupted if serum potassium is 5.6 mmol/L or higher [4]. [5]",
+      "grounded": true,
+      "latency_ms": 4954,
+      "trace_id": "09ca6fa0b98242ac",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "week1",
+      "answerable": true,
+      "answer": "Protocol amendment 2 added an additional serum potassium measurement at week 1 [4][5].",
+      "grounded": true,
+      "latency_ms": 3875,
+      "trace_id": "d8a7900b15de4c8b",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "retrieval_hit": true,
+      "answer_ok": true,
+      "cited_gold": true,
+      "passed": true
+    },
+    {
+      "id": "ldl",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 4190,
+      "trace_id": "ddee4e798ecc4387",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "metformin",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 769,
+      "trace_id": "bea3b7c9b69c45e9",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "pediatric",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 3043,
+      "trace_id": "5db9fb0a93ef48ea",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    },
+    {
+      "id": "offtopic",
+      "answerable": false,
+      "answer": "I could not find this in the provided documents.",
+      "grounded": true,
+      "latency_ms": 3861,
+      "trace_id": "1e58efc286f847b5",
+      "steps": [
+        "rewrite_query",
+        "retrieve",
+        "generate",
+        "check_citations"
+      ],
+      "refused": true,
+      "passed": true
+    }
+  ]
+}
