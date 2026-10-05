@@ -29,22 +29,27 @@ $ curl -s localhost:8000/ask -H "X-API-Key: dev-key-change-me" -H "Content-Type:
 - [Design decisions](#design-decisions)
 - [Evaluation](#evaluation)
 - [Limitations and what I would do next](#limitations-and-what-i-would-do-next)
+- [Related work](#related-work)
 
 ## Quick start
 
 You need Python 3.10 or newer and [Ollama](https://ollama.com).
 
 ```bash
-# 1. the local model (1.9 GB)
+# 1. the code
+git clone https://github.com/frezazadeh/medical-document-assistant.git
+cd medical-document-assistant
+
+# 2. the local model (1.9 GB)
 ollama pull qwen2.5:3b
 
-# 2. dependencies, into .venv, and a .env file copied from .env.example
+# 3. dependencies, into .venv, and a .env file copied from .env.example
 make install                      # or: make install PYTHON=python3.12
 
-# 3. the API, on http://localhost:8000 (interactive docs at /docs)
+# 4. the API, on http://localhost:8000 (interactive docs at /docs)
 make api
 
-# 4. in a second terminal: the chat UI, on http://localhost:8501
+# 5. in a second terminal: the chat UI, on http://localhost:8501
 make ui
 ```
 
@@ -280,6 +285,19 @@ Things this evaluation does not tell you: it is 16 questions on two synthetic do
 - **The evaluation set is small and synthetic.** With real documents I would build it together with the people who will use the assistant, and add a model-graded check for open questions.
 
 Tested on macOS (Apple Silicon, 8 GB) with Python 3.14.
+
+## Related work
+
+Earlier projects of mine in the same area:
+
+- **LangChain-RAG-Technology**: a RAG system built with LangChain, with an ingestion script, an agent and a Streamlit UI. It accompanies the GenOnet paper on multi-agent LLMs for network simulation.
+  https://github.com/frezazadeh/LangChain-RAG-Technology
+- **llm-battle**: sends the same prompt to several LLM providers (OpenAI, Anthropic, Gemini, local Ollama and others) and ranks the answers with a judge model. The model-graded evaluation I list as a next step above would build on this.
+  https://github.com/frezazadeh/llm-battle
+- **agentic-ai-starter-kit**: a minimal agent written from scratch, with a tool registry, function calling, a memory buffer and a reflection step.
+  https://github.com/frezazadeh/agentic-ai-starter-kit
+- **Put-Retrieval-Augmented-Generation-RAG-into-Production**: a second RAG system, built with LlamaIndex.
+  https://github.com/frezazadeh/Put-Retrieval-Augmented-Generation-RAG-into-Production
 
 ## License
 
