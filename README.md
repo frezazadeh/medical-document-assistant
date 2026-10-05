@@ -280,3 +280,7 @@ Things this evaluation does not tell you: it is 16 questions on two synthetic do
 - **The evaluation set is small and synthetic.** With real documents I would build it together with the people who will use the assistant, and add a model-graded check for open questions.
 
 Tested on macOS (Apple Silicon, 8 GB) with Python 3.14.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
